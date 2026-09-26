@@ -9,5 +9,5 @@ import { Tarefa } from '../../services/tarefa';
   templateUrl: './lista-tarefas.html',
 })
 export class ListaTarefas {
-  constructor(public tarefa: Tarefa) {}
+  constructor(public tarefaService: Tarefa) {}
 }

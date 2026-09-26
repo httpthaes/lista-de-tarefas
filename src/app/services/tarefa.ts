@@ -7,9 +7,12 @@ import { Injectable } from '@angular/core';
 export class Tarefa {
 
     tarefas = [
-        { descricao: 'Estudar Angular', concluida: false },
-        { descricao: 'Fazer alongamento', concluida: false },
+        { descricao: 'Estudar Angular', concluida: true },
+        { descricao: 'Ir na academia', concluida: false },
         { descricao: 'Alimentar os animais', concluida: true}
     ];
 
+    removerTarefa(tarefa: any) {
+
+    }
 }
