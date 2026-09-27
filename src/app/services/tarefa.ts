@@ -25,5 +25,7 @@ export class Tarefa {
         this.tarefas = this.tarefas.filter(t => t !== tarefa);
     };
 
-    
+    get tarefasConcluidas() {
+        return this.tarefas.filter(t => t.concluida).length
+    };
 }
