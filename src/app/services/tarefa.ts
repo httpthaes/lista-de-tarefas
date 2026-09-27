@@ -24,4 +24,6 @@ export class Tarefa {
     removerTarefa(tarefa: any) {
         this.tarefas = this.tarefas.filter(t => t !== tarefa);
     };
+
+    
 }
