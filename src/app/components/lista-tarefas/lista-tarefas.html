@@ -1,9 +1,14 @@
 <div>
+    <h1>Minhas tarefas</h1>
+
+    <input type="text" [(ngModel)]="tarefaService.novaTarefa" placeholder="Digite uma nova tarefa...">
+    <button (click)="tarefaService.adicionarTarefa()">Adicionar</button>
+
     <ul>
         <li *ngFor="let tarefa of tarefaService.tarefas">
             <input type="checkbox" [checked]="tarefa.concluida">
             <span>{{ tarefa.descricao }}</span>
-            <button (click)="removerTarefa(tarefa)"><i class="fa-regular fa-trash-can"></i></button>
+            <button (click)="tarefaService.removerTarefa(tarefa)"><i class="fa-regular fa-trash-can"></i></button>
         </li>
     </ul>
 </div>

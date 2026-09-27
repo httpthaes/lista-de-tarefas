@@ -12,7 +12,16 @@ export class Tarefa {
         { descricao: 'Alimentar os animais', concluida: true}
     ];
 
+    novaTarefa = '';
+    
+    adicionarTarefa() {
+        this.tarefas.push({
+            descricao: this.novaTarefa,
+            concluida: false
+        })
+    };
+    
     removerTarefa(tarefa: any) {
-
-    }
+        this.tarefas = this.tarefas.filter(t => t !== tarefa);
+    };
 }
