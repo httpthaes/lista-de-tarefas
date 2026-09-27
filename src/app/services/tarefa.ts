@@ -19,6 +19,8 @@ export class Tarefa {
             descricao: this.novaTarefa,
             concluida: false
         })
+
+        this.novaTarefa = '';
     };
     
     removerTarefa(tarefa: any) {
