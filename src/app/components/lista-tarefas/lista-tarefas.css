@@ -1,4 +1,58 @@
-.concluida {
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 24px;
+    width: 380px;
+}
+
+input {
+    padding: 8px 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.form-add-tarefa {
+    display: flex;
+    gap: 8px;
+}
+
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 20px;
+    background-color: #6c63ff;
+    color: white;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+li span {
+    flex: 1;
+}
+
+li button {
+    background: none;
+    color: #e63946;
+}
+
+.concluida span, .concluida input {
     text-decoration: line-through; 
     opacity: 0.5;
 }
