@@ -18,6 +18,7 @@ input {
 
 .form-add-tarefa {
     display: flex;
+    align-items: flex-start;
     gap: 8px;
 }
 
@@ -55,4 +56,10 @@ li button {
 .concluida span, .concluida input {
     text-decoration: line-through; 
     opacity: 0.5;
+}
+
+.erro {
+    color: #c0392b;
+    font-size: 12px;
+    margin: 4px 0 0;
 }

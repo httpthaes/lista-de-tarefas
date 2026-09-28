@@ -11,16 +11,12 @@ export class Tarefa {
         { descricao: 'Ir na academia', concluida: false },
         { descricao: 'Alimentar os animais', concluida: true}
     ];
-
-    novaTarefa = '';
     
-    adicionarTarefa() {
+    adicionarTarefa(descricao: string) {
         this.tarefas.push({
-            descricao: this.novaTarefa,
+            descricao: descricao,
             concluida: false
         })
-
-        this.novaTarefa = '';
     };
     
     removerTarefa(tarefa: any) {

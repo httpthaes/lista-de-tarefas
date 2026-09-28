@@ -1,10 +1,18 @@
 <div class="container">
     <h1>Minhas tarefas</h1>
 
-    <div class="form-add-tarefa">
-        <input type="text" [(ngModel)]="tarefaService.novaTarefa" placeholder="Digite uma nova tarefa...">
-        <button (click)="tarefaService.adicionarTarefa()">Adicionar</button>
-    </div>
+    <form [formGroup]="formItem" (ngSubmit)="enviar()">
+        <div class="form-add-tarefa">
+            <div class="form-input">
+                <input formControlName="descricao" placeholder="Nova tarefa">
+                <p class="erro" *ngIf="formItem.get('descricao')?.invalid && formItem.get('descricao')?.touched">
+                    Digite uma tarefa.
+                </p>
+            </div>
+            
+            <button type="submit" [disabled]="!formItem.valid">Adicionar</button>
+        </div>
+    </form>
     
 
     <ul>
